@@ -1,0 +1,40 @@
+{
+  "name": "helm-ops",
+  "version": "1.0.0",
+  "description": "An operations console in React: incident board, deploy timeline, on-call roster and runbook search, built with a reducer and typed selectors.",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "author": "Arvion Technologies <hello@arviontech.net> (https://arviontech.net)",
+  "homepage": "https://arvion-technology.github.io/labs/demos/helm-ops/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arvion-technology/helm-ops.git"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && node scripts/copy-build.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test test/*.test.ts",
+    "demo": "node scripts/serve.mjs . 4173",
+    "shot": "node scripts/shot.mjs 1440 900 docs/screenshot.png #incidents",
+    "shot:2": "node scripts/shot.mjs 1440 900 docs/screenshot-2.png #deploys",
+    "record": "node ../../_factory/scripts/record.mjs 36",
+    "verify": "node --test test/*.test.ts && node scripts/serve-check.mjs"
+  },
+  "engines": {
+    "node": ">=22.18"
+  },
+  "dependencies": {
+    "react": "^19.2.9",
+    "react-dom": "^19.2.9"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^5.2.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.7"
+  }
+}
