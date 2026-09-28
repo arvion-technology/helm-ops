@@ -1,0 +1,11 @@
+[
+  { "wait": 1500 },
+  { "hash": "#deploys" },
+  { "wait": 1600 },
+  { "hash": "#oncall" },
+  { "wait": 1300 },
+  { "hash": "#runbooks" },
+  { "wait": 1200 },
+  { "hash": "#incidents" },
+  { "wait": 1400 }
+]
