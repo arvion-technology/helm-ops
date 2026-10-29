@@ -15,7 +15,7 @@
     "dev": "vite",
     "build": "vite build && node scripts/copy-build.mjs",
     "typecheck": "tsc --noEmit",
-    "test": "node --test test/*.test.ts",
+    "test": "node --experimental-strip-types --test test/*.test.ts",
     "demo": "node scripts/serve.mjs . 4173",
     "shot": "node scripts/shot.mjs 1440 900 docs/screenshot.png #incidents",
     "shot:2": "node scripts/shot.mjs 1440 900 docs/screenshot-2.png #deploys",
